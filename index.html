@@ -3,119 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aditya Prasetya Suryana - Konsultan IT yang berpengalaman dalam solusi aplikasi khusus untuk industri kesehatan dan manufaktur.">
-    <meta name="keywords" content="Konsultan IT, Aplikasi Kustom, Solusi Kesehatan IT, Solusi Manufaktur IT, ERP, HIS">
+    <meta name="description" content="Aditya Prasetya Suryana - Konsultan IT, customize aplikasi, dan perancangan aplikasi">
+    <meta name="keywords" content="Aditya Prasetya Suryana, Konsultan IT, Customize Aplikasi, Perancangan Aplikasi, IT Manufaktur, IT Rumah Sakit">
     <meta name="author" content="Aditya Prasetya Suryana">
     <title>Aditya Prasetya Suryana - Konsultan IT</title>
-    
+
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    
     <style>
-        body {
-            font-family: Arial, sans-serif;
-        }
-
-        .hero-section {
-            background: linear-gradient(to right, #007bff, #6610f2);
-            color: white;
-            padding: 100px 0;
-        }
-
-        .custom-btn {
-            background-color: #007bff;
-            color: white;
-            border: none;
-            padding: 12px 30px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
-
-        .custom-btn:hover {
-            background-color: #0056b3;
-        }
-
-        .feature-box {
+        /* Custom Styles */
+        .hero {
             background-color: #f8f9fa;
-            border-radius: 8px;
-            padding: 30px;
+            padding: 100px 0;
             text-align: center;
-            margin-bottom: 30px;
         }
-
-        footer {
-            background-color: #343a40;
-            color: white;
-            padding: 40px 0;
+        .hero img {
+            max-width: 100%;
+            height: auto;
         }
-
-        footer a {
-            color: #adb5bd;
-        }
-
-        footer a:hover {
-            color: white;
-            text-decoration: none;
-        }
-
-        .img-placeholder {
-            width: 100%;
-            height: 250px;
-            background-color: #d3d3d3;
-            text-align: center;
-            line-height: 250px;
-            font-size: 20px;
-            color: #666;
+        .contact-icons a {
+            padding: 10px 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Hero Section -->
-    <section class="hero-section text-center">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <h1 class="display-4">Aditya Prasetya Suryana</h1>
-            <p class="lead">Konsultan IT | Solusi Aplikasi Kustom untuk Kesehatan & Manufaktur</p>
-            <a href="#contact" class="custom-btn mt-4">Hubungi Saya</a>
+            <a class="navbar-brand" href="#">Aditya Prasetya</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home">Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">Tentang Saya</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Hubungi Saya</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Selamat Datang di Situs Resmi Aditya Prasetya</h1>
+            <p>Konsultan IT dengan pengalaman di sektor manufaktur dan rumah sakit.</p>
+            <img src="https://via.placeholder.com/600x400" alt="Gambar Hero Placeholder">
         </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Tentang Saya</h2>
-            <p class="mb-5">Saya adalah konsultan IT berpengalaman yang bekerja dengan berbagai perusahaan di sektor kesehatan dan manufaktur. Keahlian saya meliputi kustomisasi dan pengembangan aplikasi yang membantu meningkatkan efisiensi operasional.</p>
-            <div class="img-placeholder">Gambar Profil</div>
-        </div>
-    </section>
-
-    <!-- Services Section -->
-    <section id="services" class="py-5 bg-light">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <h4>Desain Aplikasi Kustom</h4>
-                        <p>Solusi IT yang disesuaikan dengan kebutuhan bisnis Anda.</p>
-                        <div class="img-placeholder">Gambar Desain</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <h4>Sistem IT Kesehatan</h4>
-                        <p>Pengelolaan sistem yang efisien dan aman untuk rumah sakit dan klinik.</p>
-                        <div class="img-placeholder">Gambar Kesehatan</div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="feature-box">
-                        <h4>Solusi Manufaktur</h4>
-                        <p>Sistem yang dioptimalkan untuk meningkatkan produktivitas dan menurunkan biaya.</p>
-                        <div class="img-placeholder">Gambar Manufaktur</div>
-                    </div>
-                </div>
-            </div>
+            <h2 class="text-center mb-4">Tentang Saya</h2>
+            <p class="text-center">Saya Aditya Prasetya Suryana, seorang lulusan IT yang memiliki pengalaman sebagai konsultan IT, customize aplikasi, dan perancangan aplikasi, terutama di sektor manufaktur dan rumah sakit. Saya siap membantu bisnis Anda dalam menghadirkan solusi IT yang tepat sasaran.</p>
         </div>
     </section>
 
@@ -124,19 +77,29 @@
         <div class="container text-center">
             <h2 class="mb-4">Hubungi Saya</h2>
             <p>Jika Anda memerlukan solusi IT kustom untuk bisnis Anda, jangan ragu untuk menghubungi saya.</p>
-            <a href="mailto:aditya@example.com" class="custom-btn mt-3">Email Saya</a>
+            
+            <div class="d-flex justify-content-center contact-icons">
+                <!-- Button for Phone -->
+                <a href="tel:+628123456789" class="btn btn-primary d-flex align-items-center mx-2">
+                    <i class="bi bi-telephone-fill me-2"></i> +62 812 3456 789
+                </a>
+                
+                <!-- Button for Email -->
+                <a href="mailto:aditya@example.com" class="btn btn-secondary d-flex align-items-center mx-2">
+                    <i class="bi bi-envelope-fill me-2"></i> aditya@example.com
+                </a>
+            </div>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer>
+    <footer class="bg-light py-3">
         <div class="container text-center">
-            <p>&copy; 2024 Aditya Prasetya Suryana. Hak Cipta Dilindungi.</p>
-            <p>Ikuti saya di <a href="#">LinkedIn</a> | <a href="#">GitHub</a></p>
+            <p class="mb-0">&copy; 2024 Aditya Prasetya Suryana. Semua Hak Cipta Dilindungi.</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
