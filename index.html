@@ -3,30 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aditya Prasetya Suryana - Konsultan IT, customize aplikasi, dan perancangan aplikasi">
-    <meta name="keywords" content="Aditya Prasetya Suryana, Konsultan IT, Customize Aplikasi, Perancangan Aplikasi, IT Manufaktur, IT Rumah Sakit">
+    <meta name="description" content="Aditya Prasetya Suryana - Konsultan IT untuk Aplikasi di sektor manufaktur dan rumah sakit">
+    <meta name="keywords" content="Konsultan IT, IT Manufaktur, IT Rumah Sakit, Customize Aplikasi, Perancangan Aplikasi">
     <meta name="author" content="Aditya Prasetya Suryana">
     <title>Aditya Prasetya Suryana - Konsultan IT</title>
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    
-    <!-- Bootstrap Icons -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-        /* Custom Styles */
-        .hero {
+        .hero-section {
             background-color: #f8f9fa;
             padding: 100px 0;
-            text-align: center;
         }
-        .hero img {
-            max-width: 100%;
-            height: auto;
+        .hero-section h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
         }
-        .contact-icons a {
-            padding: 10px 20px;
+        .hero-section p {
+            font-size: 1.2rem;
+            color: #6c757d;
+        }
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+        .service-box {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        .experience-box {
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #e9ecef;
         }
     </style>
 </head>
@@ -34,18 +41,18 @@
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Aditya Prasetya</a>
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Aditya Prasetya Suryana</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" href="#home">Beranda</a>
+                        <a class="nav-link" href="#services">Jasa</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#about">Tentang Saya</a>
+                        <a class="nav-link" href="#experience">Pengalaman</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">Hubungi Saya</a>
@@ -56,50 +63,79 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero-section text-center">
         <div class="container">
-            <h1>Selamat Datang di Situs Resmi Aditya Prasetya</h1>
-            <p>Konsultan IT dengan pengalaman di sektor manufaktur dan rumah sakit.</p>
-            <img src="https://via.placeholder.com/600x400" alt="Gambar Hero Placeholder">
+            <h1>Aditya Prasetya Suryana</h1>
+            <p>Konsultan IT yang berpengalaman dalam sektor manufaktur dan rumah sakit, siap membantu Anda dalam customize dan perancangan aplikasi yang tepat.</p>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-5">
+    <!-- Services Section -->
+    <section id="services" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Tentang Saya</h2>
-            <p class="text-center">Saya Aditya Prasetya Suryana, seorang lulusan IT yang memiliki pengalaman sebagai konsultan IT, customize aplikasi, dan perancangan aplikasi, terutama di sektor manufaktur dan rumah sakit. Saya siap membantu bisnis Anda dalam menghadirkan solusi IT yang tepat sasaran.</p>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact" class="py-5">
-        <div class="container text-center">
-            <h2 class="mb-4">Hubungi Saya</h2>
-            <p>Jika Anda memerlukan solusi IT kustom untuk bisnis Anda, jangan ragu untuk menghubungi saya.</p>
-            
-            <div class="d-flex justify-content-center contact-icons">
-                <!-- Button for Phone -->
-                <a href="tel:+628123456789" class="btn btn-primary d-flex align-items-center mx-2">
-                    <i class="bi bi-telephone-fill me-2"></i> +62 812 3456 789
-                </a>
-                
-                <!-- Button for Email -->
-                <a href="mailto:aditya@example.com" class="btn btn-secondary d-flex align-items-center mx-2">
-                    <i class="bi bi-envelope-fill me-2"></i> aditya@example.com
-                </a>
+            <h2 class="section-title text-center">Layanan Konsultasi IT</h2>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box bg-white">
+                        <h4>Perancangan Aplikasi</h4>
+                        <p>Saya menyediakan jasa perancangan aplikasi sesuai dengan kebutuhan bisnis Anda.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box bg-white">
+                        <h4>Customize Aplikasi</h4>
+                        <p>Menyesuaikan aplikasi yang sudah ada agar sesuai dengan alur kerja perusahaan Anda.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-box bg-white">
+                        <h4>Integrasi Sistem</h4>
+                        <p>Menghubungkan berbagai sistem IT di perusahaan Anda untuk meningkatkan efisiensi dan kolaborasi.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="bg-light py-3">
-        <div class="container text-center">
-            <p class="mb-0">&copy; 2024 Aditya Prasetya Suryana. Semua Hak Cipta Dilindungi.</p>
+    <!-- After Sales Section -->
+    <section id="after-sales" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="section-title text-center">Layanan After Sales</h2>
+            <p class="text-center">Saya memberikan dukungan penuh setelah proyek selesai, termasuk maintenance, support, dan pembaruan aplikasi sesuai kebutuhan Anda.</p>
         </div>
-    </footer>
+    </section>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2 class="section-title text-center">Pengalaman</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="experience-box">
+                        <h4>IT Manufaktur</h4>
+                        <p>Menyediakan solusi IT untuk industri manufaktur, termasuk implementasi aplikasi yang mendukung proses produksi.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="experience-box">
+                        <h4>IT Rumah Sakit</h4>
+                        <p>Berpengalaman dalam merancang dan meng-custom aplikasi untuk rumah sakit, seperti sistem informasi manajemen rumah sakit (SIMRS).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 text-center">
+        <div class="container">
+            <h2 class="section-title">Hubungi Saya</h2>
+            <p>Anda dapat menghubungi saya melalui nomor ponsel atau email di bawah ini:</p>
+            <a href="tel:+628123456789" class="btn btn-primary me-2"><i class="bi bi-phone"></i> 0812-3456-789</a>
+            <a href="mailto:aditya@example.com" class="btn btn-primary"><i class="bi bi-envelope"></i> aditya@example.com</a>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
