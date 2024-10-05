@@ -25,5 +25,5 @@ Saya memiliki latar belakang di bidang teknologi informasi dan berkomitmen untuk
 
 ## Hubungi Saya
 Anda dapat menghubungi saya melalui:
-- **Telepon**: [0812-3456-789](tel:+628123456789)
-- **Email**: [aditya@example.com](mailto:aditya@example.com)
+- **Telepon**: [0812-2460-3966](tel:+6281224603966)
+- **Email**: [adityaprasetyasuryana@gmail.com](mailto:adityaprasetyasuryana@gmail.com)
