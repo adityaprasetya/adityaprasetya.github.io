@@ -1,5 +1,5 @@
-<script type="application/ld+json">
-{
+// schema.js
+const schemaData = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "name": "Aditya Prasetya Suryana",
@@ -15,5 +15,10 @@
     "https://www.x.com/adityapras82",
     "https://www.linkedin.com/in/aditya-prasetya-suryana"
   ]
-}
-</script>
+};
+
+// Menambahkan schema ke dalam head
+const script = document.createElement('script');
+script.type = 'application/ld+json';
+script.text = JSON.stringify(schemaData);
+document.head.appendChild(script);
