@@ -514,14 +514,16 @@
 <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
 </script>
-<script>
+
+    <script>
    (function(){
       emailjs.init({
         publicKey: "cYu70KLbi_E6VMsi2",
       });
    })();
 
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+   // Menangani form submit
+   document.getElementById('contact-form').addEventListener('submit', function(event) {
         event.preventDefault(); // Mencegah form dari pengiriman default
 
         // Mengambil nilai input form
@@ -531,9 +533,20 @@
             message: document.getElementById('message').value
         };
 
+        // Menampilkan animasi loading sebelum pengiriman
+        Swal.fire({
+            title: 'Mengirim pesan...',
+            text: 'Mohon tunggu beberapa saat.',
+            allowOutsideClick: false, // Mencegah klik di luar SweetAlert saat loading
+            didOpen: () => {
+                Swal.showLoading(); // Memunculkan animasi loading
+            }
+        });
+
         // Mengirim email
         emailjs.send('service_g2dh5sr', 'template_wyfnsj7', templateParams)
             .then(function() {
+                // Jika pengiriman berhasil, menampilkan pesan sukses
                 Swal.fire({
                     icon: 'success',
                     title: 'Pesan Anda telah dikirim!',
@@ -542,6 +555,7 @@
                 });
                 document.getElementById('contact-form').reset(); // Reset form setelah pengiriman
             }, function(error) {
+                // Jika pengiriman gagal, menampilkan pesan error
                 Swal.fire({
                     icon: 'error',
                     title: 'Terjadi kesalahan!',
@@ -549,9 +563,9 @@
                     confirmButtonText: 'OK'
                 });
             });
-    });
+   });
 </script>
-
+    
     <script type="application/ld+json">
 {
   "@context": "https://schema.org",
