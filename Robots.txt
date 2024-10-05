@@ -2,5 +2,9 @@
 User-agent: *
 Allow: /
 
+# Block access to specific file types (optional)
+Disallow: /*.css$
+Disallow: /*.js$
+
 # Sitemap (replace with the actual URL to your sitemap)
 Sitemap: https://adityaprasetya.github.io/sitemap.xml
