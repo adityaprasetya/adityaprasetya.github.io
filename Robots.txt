@@ -1,0 +1,6 @@
+# Allow all web crawlers access to the website
+User-agent: *
+Allow: /
+
+# Sitemap (replace with the actual URL to your sitemap)
+Sitemap: https://adityaprasetya.github.io/sitemap.xml
